@@ -1,4 +1,3 @@
-import "./App.css";
 import Calculadora from "./Calculadora";
 
 function App() {
