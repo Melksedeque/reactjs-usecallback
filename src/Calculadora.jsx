@@ -4,7 +4,7 @@ import { useState } from "react";
 function Calculadora({ formulaPitagoras }) {
   const [ladoB, setLadoB] = useState(0);
   const [ladoC, setLadoC] = useState(0);
-  const [, setHipotenusa] = useState(0);
+  const [hipotenusa, setHipotenusa] = useState(0);
 
   useEffect(() => {
     if (ladoB > 0 && ladoC > 0) {
@@ -16,7 +16,7 @@ function Calculadora({ formulaPitagoras }) {
     <div>
       <h1>Calculadora de Pitágoras</h1>
       <div>
-        <label htmlFor="">Lado B</label>
+        <label htmlFor="">Lado B: </label>
         <input
           type="number"
           placeholder="Insira o valor de B"
@@ -25,7 +25,7 @@ function Calculadora({ formulaPitagoras }) {
         />
       </div>
       <div>
-        <label htmlFor="">Lado C</label>
+        <label htmlFor="">Lado C: </label>
         <input
           type="number"
           placeholder="Insira o valor de C"
@@ -34,7 +34,7 @@ function Calculadora({ formulaPitagoras }) {
         />
       </div>
       <p>
-        O valor da hipotenusa é: <strong>???</strong>
+        O valor da hipotenusa é: <strong>{hipotenusa}</strong>
       </p>
     </div>
   );
