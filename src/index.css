@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.app {
+  background-color: #030712;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
