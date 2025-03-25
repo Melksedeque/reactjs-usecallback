@@ -9,8 +9,9 @@ function App() {
   };
 
   return (
-    <div className="pitagoras">
+    <div className="app">
       <img
+        className="border-4 border-gray-300 rounded-3xl"
         src="/imagens/triangulo-retangulo.webp"
         alt="Triângulo retângulo de Pitagoras"
         width={500}
